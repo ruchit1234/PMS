@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ApplyLeaveActivity"
+    android:layout_margin="@dimen/margin_8dp">
+
+    <TextView
+        android:id="@+id/tvLeaveFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/leave_from"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etLeaveFromDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/textsize_14sp"
+        android:background="@drawable/squre_round_border"
+        android:inputType="date"
+        android:padding="@dimen/margin_5dp"
+        android:hint="@string/date_formate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLeaveFrom" />
+
+    <TextView
+        android:id="@+id/tvLeaveTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/leave_to"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/etLeaveFromDate"/>
+
+    <EditText
+        android:id="@+id/etLeaveToDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/textsize_14sp"
+        android:background="@drawable/squre_round_border"
+        android:inputType="date"
+        android:hint="@string/date_formate"
+        android:padding="@dimen/margin_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLeaveTo" />
+
+    <TextView
+        android:id="@+id/tvNoOfDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/NoDays"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/etLeaveToDate"/>
+
+    <TextView
+        android:id="@+id/tv_NoOfDays"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/textsize_14sp"
+        android:background="@drawable/squre_rounded_bordercolor"
+        android:hint="@string/number_formate"
+        android:padding="@dimen/margin_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoOfDays"/>
+
+    <TextView
+        android:id="@+id/tvLeaveReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/reason"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_NoOfDays"/>
+
+    <EditText
+        android:id="@+id/etLeaveReason"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/textsize_14sp"
+        android:background="@drawable/squre_round_border"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/margin_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLeaveReason"/>
+
+</android.support.constraint.ConstraintLayout>

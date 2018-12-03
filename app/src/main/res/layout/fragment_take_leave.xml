@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TakeLeaveFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTakeLeave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        tool:layout_constraintBottom_toTopOf="@+id/linearLayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        tool:layout_constraintBottom_toBottomOf="parent"
+        tool:layout_constraintTop_toTopOf="parent"
+        tool:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btnApplyLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="@string/apply_leave"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/btnHoliday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="@string/holiday"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
