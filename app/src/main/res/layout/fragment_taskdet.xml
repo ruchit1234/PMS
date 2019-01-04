@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Taskdet">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:id="@+id/lnrly"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/black"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Employee Name:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tvemfname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Project Name:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tvprnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task Name:"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/tvtasknm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task Description:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <WebView
+                android:id="@+id/wbdesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_8dp"
+                android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Development Estimated Hours:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tvesthrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="QA Estimated Hours:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tvqaesthrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task Created By:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tvtaskcrtby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task QA:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+            <Spinner
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/spqa"
+                android:title="Task Status"
+                app:actionViewClass="android.widget.Spinner"
+                app:showAsAction="always"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task Action:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+            <Spinner
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/sptaskstatus"
+                android:title="Task Status"
+                app:actionViewClass="android.widget.Spinner"
+                app:showAsAction="always"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task Status:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tvtaskstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task Level:"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tvtasklvl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:textSize="20dp"
+                android:background="@color/text_color"
+                android:padding="@dimen/margin_8dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

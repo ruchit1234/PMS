@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/laychat"
+    android:paddingTop="8dp">
+
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/recname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="19dp"
+            android:text="John Doe"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/recmsg"
+        android:text="hi man, how are you?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/recname"
+        android:maxWidth="240dp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        app:arrowWidth="8dp"
+        app:angle="8dp"
+        app:arrowHeight="10dp"
+        app:arrowPosition="14dp"
+        app:arrowLocation="right"
+        app:arrowCenter="true"
+        app:bubbleColor="@android:color/holo_green_dark"
+        android:textColor="#ffffff"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/recname"
+        android:layout_marginLeft="8dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

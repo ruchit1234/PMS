@@ -19,12 +19,15 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+
+
 public class ApplyLeaveActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = ApplyLeaveActivity.class.getSimpleName();
     private EditText etLeaveFromDate, etLeaveToDate, etReason;
     private TextView tvNoOfDays;
     private int mYear, mMonth, mDay, mHour, mMinute;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

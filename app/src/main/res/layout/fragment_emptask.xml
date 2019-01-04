@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="false">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.FullScreenDialog"
+        android:layout_margin="@dimen/margin_8dp">
+        <Spinner
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/empspproj"
+            android:title="Select A Project"
+            app:actionViewClass="android.widget.Spinner"
+            app:layout_constraintTop_toTopOf="parent"
+            app:showAsAction="always"
+            />
+        <TextView
+            android:id="@+id/tvtasknm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Task Name:"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/empspproj" />
+
+        <EditText
+            android:id="@+id/empettasknm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/textsize_14sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/squre_round_border"
+            android:padding="@dimen/margin_5dp"
+            android:hint="Enter Task Name:"
+            android:textColorHint="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtasknm" />
+
+        <TextView
+            android:id="@+id/tvtaskdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Task Description:"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/empettasknm"/>
+
+        <EditText
+            android:id="@+id/empettaskdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/textsize_14sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/squre_round_border"
+            android:hint="Enter Task Description"
+            android:textColorHint="@android:color/black"
+            android:padding="@dimen/margin_5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtaskdesc" />
+
+        <TextView
+            android:id="@+id/tvtasktype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Task Type:"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/empettaskdesc"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/rdgrp"
+            app:layout_constraintLeft_toRightOf="@+id/tvtasktype"
+            app:layout_constraintTop_toBottomOf="@id/tvtasktype"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dev"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QA"
+                />
+        </RadioGroup>
+        <Spinner
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/empspsellvl"
+            android:title="Select A Level"
+            app:actionViewClass="android.widget.Spinner"
+            app:layout_constraintTop_toBottomOf="@+id/rdgrp"
+            app:showAsAction="always"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tvesthrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Select Estimated Hours:"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empspsellvl" />
+
+        <TextView
+            android:id="@+id/empetesthour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/textsize_14sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/squre_round_border"
+            android:hint="Estimated Hours"
+            android:textColorHint="@android:color/black"
+            android:padding="@dimen/margin_5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvesthrs" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/uploaddoc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/empetesthour"
+            android:onClick="upload"
+            ><RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvupdoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Upload Document"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvupdoc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:src="@drawable/ic_add_black_24dp" />
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/empsubmit"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:background="@android:color/black"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/uploaddoc"
+            app:layout_constraintRight_toLeftOf="@id/empcancel"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/empcancel"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Cancel"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/uploaddoc"
+            app:layout_constraintLeft_toRightOf="@id/empsubmit"
+            />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

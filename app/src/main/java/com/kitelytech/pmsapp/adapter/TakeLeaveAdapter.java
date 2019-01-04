@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.kitelytech.pmsapp.R;
 
@@ -35,6 +36,7 @@ public class TakeLeaveAdapter extends RecyclerView.Adapter<TakeLeaveAdapter.Take
 
     @Override
     public void onBindViewHolder(@NonNull TakeLeaveAdapter.TakeLeaveViewHolder takeLeaveViewHolder, int i) {
+
 
     }
 

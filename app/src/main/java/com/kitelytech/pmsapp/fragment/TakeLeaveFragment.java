@@ -11,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.kitelytech.pmsapp.R;
 import com.kitelytech.pmsapp.activity.ApplyLeaveActivity;
-import com.kitelytech.pmsapp.adapter.ProjectListAdapter;
 import com.kitelytech.pmsapp.adapter.TakeLeaveAdapter;
 
 import java.util.ArrayList;
@@ -51,7 +51,6 @@ public class TakeLeaveFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_take_leave, container, false);
         mContext = view.getContext();
-
         rv_TakeLeave = (RecyclerView)view.findViewById(R.id.rvTakeLeave);
         btnApplyLeave = (Button) view.findViewById(R.id.btnApplyLeave);
         btnHoliday = (Button) view.findViewById(R.id.btnHoliday);

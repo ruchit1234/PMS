@@ -49,12 +49,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:id="@+id/lnrly"
             android:layout_marginEnd="8dp"
             android:background="@color/gray"
             android:orientation="vertical"
             android:padding="@dimen/margin_8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="First Name:"
+                android:textSize="12dp"
+                />
 
             <EditText
+                android:id="@+id/etfname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_8dp"
@@ -62,8 +70,15 @@
                 android:hint="@string/firstname"
                 android:inputType="text"
                 android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Last Name:"
+                android:textSize="12dp"
+                />
 
             <EditText
+                android:id="@+id/etlname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_8dp"
@@ -71,8 +86,15 @@
                 android:hint="@string/lastname"
                 android:inputType="text"
                 android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="E-Mail:"
+                android:textSize="12dp"
+                />
 
             <EditText
+                android:id="@+id/etemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_8dp"
@@ -80,8 +102,15 @@
                 android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
                 android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Address:"
+                android:textSize="12dp"
+                />
 
             <EditText
+                android:id="@+id/etaddress"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_margin="@dimen/margin_8dp"
@@ -89,8 +118,15 @@
                 android:hint="@string/address"
                 android:inputType="textMultiLine"
                 android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Joining Date:"
+                android:textSize="12dp"
+                />
 
             <EditText
+                android:id="@+id/etjoindate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_8dp"
@@ -98,8 +134,15 @@
                 android:hint="@string/joining_date"
                 android:inputType="date"
                 android:padding="@dimen/margin_8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Position:"
+                android:textSize="12dp"
+                />
 
             <EditText
+                android:id="@+id/etpos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_8dp"
@@ -109,4 +152,14 @@
                 android:padding="@dimen/margin_8dp" />
         </LinearLayout>
     </ScrollView>
+    <Button
+        android:layout_width="100dp"
+        android:id="@+id/update"
+        android:layout_height="40dp"
+        android:width="40dp"
+        android:layout_margin="10dp"
+        android:text="Update"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        />
 </android.support.constraint.ConstraintLayout>
